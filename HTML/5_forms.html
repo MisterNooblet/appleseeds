@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="#">
+      <div>
+        <label for="Email">Email:</label>
+        <br />
+        <input
+          type="email"
+          name="Email"
+          id="email"
+          placeholder="youremail@domain.com"
+        />
+        <br />
+        <label for="Password">Password:</label>
+        <br />
+        <input
+          type="password"
+          name="Password"
+          id="email"
+          placeholder="**********"
+        />
+        <br />
+        <label for="Age">Age group:</label>
+        <br />
+        <select name="Age" id="">
+          <option value="18-25">18-25</option>
+          <option value="26-30">26-30</option>
+          <option value="31-35">31-35</option>
+          <option value="31-35">36-42</option>
+          <option value="31-35">43-99</option>
+        </select>
+        <br />
+        <label for="ExactAge">Exact Age:</label>
+        <br />
+        <input type="number" name="ExactAge" id="" />
+        <br />
+        <label for="aboutme">Tell us a little about yourself:</label>
+        <br />
+        <textarea
+          name="aboutme"
+          id=""
+          cols="50"
+          rows="5"
+          placeholder="I like to..."
+        ></textarea>
+        <br /><input type="checkbox" id="agree" />I hereby agree to the
+        <a href="https://www.youtube.com/watch?v=O91DT1pR1ew"
+          >terms of service</a
+        >
+      </div>
+      <input type="submit" value="Sign Up" />
+    </form>
+  </body>
+</html>
