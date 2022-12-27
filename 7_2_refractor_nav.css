@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://img.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg");
+}
+.sticky {
+  background-color: rgb(203, 182, 144, 0.8);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+#facebook:hover {
+  border: 1px solid black;
+}
+#git:hover {
+  border: 1px solid black;
+  border-radius: 52px;
+}
+#ig:hover {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+nav li {
+  display: inline;
+  margin: 5px 50px 0px 50px;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+.clr {
+  clear: both;
+}
+.box {
+  border: 1px solid black;
+  padding: 7px;
+  margin-bottom: 7px;
+}
+#header {
+  text-align: center;
+  background-color: rgb(203, 182, 144, 0.8);
+}
+#cards {
+  float: left;
+  width: 70%;
+  height: 601px;
+  background-color: rgb(203, 182, 144, 0.8);
+  padding: 0px;
+}
+#card1 {
+  max-height: 300px;
+}
+.card {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+#main {
+  text-align: right;
+  float: right;
+  width: 29%;
+  height: 600px;
+  background-color: rgb(203, 182, 144, 0.8);
+}
+#footer {
+  background-color: rgb(203, 182, 144, 0.8);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  bottom: 0;
+  height: 5.5vh;
+  justify-content: space-between;
+}
+#footer:hover {
+  background-color: rgb(203, 182, 144);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  bottom: 0;
+  height: 5.5vh;
+  justify-content: space-between;
+  box-shadow: 10px 10px 20px black;
+}
+.personal-image {
+  width: 295px;
+  height: 295px;
+  padding-bottom: 10px;
+}
+.personal-image2 {
+  width: 295px;
+  height: 295px;
+  padding: 0px;
+  margin: 0px;
+}
