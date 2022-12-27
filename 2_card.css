@@ -1,0 +1,19 @@
+body {
+  background-color: grey;
+}
+#image {
+  height: 400px;
+  width: 400px;
+}
+#info {
+  background-color: aliceblue;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  box-shadow: 10px 10px black;
+}
+#attractions {
+  color: green;
+  font-style: italic;
+  font-weight: 600;
+}
