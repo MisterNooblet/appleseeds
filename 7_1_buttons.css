@@ -1,0 +1,94 @@
+* {
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+}
+body {
+  background-color: rgb(1, 71, 71);
+}
+.register {
+  padding: 10px;
+  border: none;
+  margin: 50px;
+}
+#container {
+  max-width: 500px;
+  margin: auto;
+}
+#regflat {
+  background-color: rgb(52, 52, 253);
+}
+#reground {
+  background-color: rgb(31, 202, 31);
+  border-radius: 20px;
+}
+#regflat:hover {
+  background-color: blue;
+}
+#reground:hover {
+  background-color: green;
+  border-radius: 20px;
+}
+#regflatghost {
+  border: 2px solid red;
+  background-color: rgba(0, 0, 0, 0);
+}
+#regroundghost {
+  border: 2px solid yellow;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+}
+#regflatghost:hover {
+  border: 2px solid red;
+  background-color: red;
+}
+#regroundghost:hover {
+  border: 2px solid yellow;
+  background-color: yellow;
+  border-radius: 20px;
+}
+
+/* 
+
+
+
+*/
+
+.submit {
+  padding: 5px;
+  border: none;
+  margin: 50px;
+}
+#subflat {
+  background-color: rgb(248, 190, 81);
+}
+#subround {
+  background-color: rgb(185, 122, 122));
+  border-radius: 20px;
+}
+#subflat:hover {
+  background-color: orange;
+}
+#subround:hover {
+  background-color: rosybrown;
+  border-radius: 20px;
+}
+#subflatghost {
+  border: 2px solid purple;
+  background-color: rgba(0, 0, 0, 0);
+}
+#subroundghost {
+  border: 2px solid teal;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+}
+#subflatghost:hover {
+  border: 2px solid purple;
+  background-color: purple;
+}
+#subroundghost:hover {
+  border: 2px solid teal;
+  background-color: teal;
+  border-radius: 20px;
+}
