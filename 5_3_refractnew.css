@@ -1,0 +1,66 @@
+body {
+  background-color: #dae2b6;
+  font-family: "Roboto", sans-serif;
+}
+#git {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+h1 {
+  color: #eeff00;
+  text-shadow: 2px 2px black;
+}
+#header {
+  text-align: center;
+  background-color: #ccd6a6;
+  box-shadow: 10px 10px 20px black;
+}
+.personal-image {
+  width: 400px;
+  height: 400px;
+}
+.parent {
+  width: fit-content;
+  height: fit-content;
+
+  margin-bottom: 10px;
+}
+.parent:hover {
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 10px 10px 20px black;
+  margin-bottom: 10px;
+}
+.child {
+  display: inline-block;
+  margin-right: -4px;
+  background-color: #ccd6a6;
+  vertical-align: middle;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+}
+
+#footer {
+  background-color: #ccd6a6;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  bottom: 0;
+  height: 5.5vh;
+  justify-content: space-between;
+}
+#footer:hover {
+  background-color: #ccd6a6;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  bottom: 0;
+  height: 5.5vh;
+  justify-content: space-between;
+  box-shadow: 10px 10px 20px black;
+}
