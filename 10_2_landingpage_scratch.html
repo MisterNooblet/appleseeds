@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR Landing page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: bisque;
+      }
+      #mainbox {
+        width: 80vw;
+        height: 70vh;
+        background-color: white;
+        margin: 15vh 10vw;
+      }
+
+      #leftinfobox {
+        width: 35vw;
+        height: 60vh;
+        padding: 10vh 0;
+        font-size: calc(8px + (18 - 8) * ((100vw - 300px) / (1600 - 300)));
+        float: left;
+      }
+      #leftinfobox h1 {
+        margin-left: 20vw;
+        margin-bottom: 5vh;
+      }
+
+      #leftinfobox h3 {
+        margin-bottom: 5vh;
+        margin-left: 15vw;
+      }
+      #leftinfobox p {
+        margin-left: 15vw;
+        line-height: 40px;
+      }
+
+      #rightimagebox {
+        background: url("/assets/images/pfp.jpg") no-repeat center center/cover;
+        width: 35vw;
+        height: 60vh;
+        float: right;
+        margin: 5vh 5vw;
+      }
+
+      @media (max-width: 900px) {
+        #leftinfobox {
+          width: 70vw;
+          height: 60vh;
+          padding: 10vh 0;
+          font-size: calc(8px + (18 - 8) * ((100vw - 300px) / (1600 - 300)));
+          float: left;
+        }
+
+        #rightimagebox {
+          background: url("/assets/images/pfp.jpg") no-repeat center
+            center/cover;
+          width: 70vw;
+          height: 60vh;
+          float: right;
+          margin: 5vh 5vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainbox">
+      <div id="leftinfobox">
+        <h3>MY NAME IS</h3>
+        <h1>Artyom Ribakov</h1>
+        <p>
+          I've been studying in appleseed's fullstack bootcamp for a week now ,
+          and ive learned some neat and some archeological features as well....
+          id love to demonstrate one called @media so lets get crazy with
+          resizing the screen!
+        </p>
+        <p>
+          oh and this <a href="">link</a> should take you to my about page , but
+          it wont.
+        </p>
+      </div>
+      <div id="rightimagebox"></div>
+    </div>
+  </body>
+</html>
