@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9_3_side_part_dissapearance</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        text-align: center;
+        border: 1px solid black;
+      }
+      #bigbox {
+        width: 69%;
+        height: 50vh;
+        border: 1px solid black;
+        float: left;
+      }
+      #smallbox {
+        width: 29%;
+        height: 50vh;
+        border: 1px solid black;
+        float: right;
+      }
+
+      @media (max-width: 1400px) {
+        #bigbox {
+          width: 100%;
+          height: 50vh;
+          border: 1px solid black;
+          float: left;
+        }
+        #smallbox {
+          width: 29%;
+          height: 50vh;
+          border: 1px solid black;
+          float: right;
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav><h1>This is a navbar</h1></nav>
+    <div class="container">
+      <div id="bigbox">Main box</div>
+      <div id="smallbox">Small box</div>
+    </div>
+  </body>
+</html>
