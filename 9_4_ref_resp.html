@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6_2_refractor_float</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+  box-sizing: border-box;
+}
+
+
+
+}
+body {
+  background-image: url("https://img.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg");
+}
+.sticky {
+  background-color: rgb(203, 182, 144, 0.8);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+#facebook:hover {
+  border: 1px solid black;
+}
+#git:hover {
+  border: 1px solid black;
+  border-radius: 52px;
+}
+#ig:hover {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+nav li {
+  display: inline;
+  margin: 5px 50px 0px 50px;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+.clr {
+  clear: both;
+}
+.box {
+  border: 1px solid black;
+  padding: 7px;
+  margin-bottom: 7px;
+}
+#header {
+  text-align: center;
+  background-color: rgb(203, 182, 144, 0.8);
+}
+#cards {
+  float: left;
+  width: 70%;
+  height: 601px;
+  background-color: rgb(203, 182, 144, 0.8);
+  padding: 0px;
+}
+#card1 {
+  max-height: 300px;
+}
+.card {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+#main {
+  text-align: right;
+  float: right;
+  width: 29%;
+  height: 600px;
+  background-color: rgb(203, 182, 144, 0.8);
+}
+#footer {
+  background-color: rgb(203, 182, 144, 0.8);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  bottom: 0;
+  height: 5.5vh;
+  justify-content: space-between;
+}
+#footer:hover {
+  background-color: rgb(203, 182, 144);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  bottom: 0;
+  height: 5.5vh;
+  justify-content: space-between;
+  box-shadow: 10px 10px 20px black;
+}
+.personal-image {
+  width: 295px;
+  height: 295px;
+  padding-bottom: 10px;
+}
+.personal-image2 {
+  width: 295px;
+  height: 295px;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media (max-width:1200px ){
+  #cards {
+  float: left;
+  width: 70%;
+  height: 1200px;
+  background-color: rgb(203, 182, 144, 0.8);
+  padding: 0px;
+}
+#main {
+  text-align: right;
+  float: right;
+  width: 29%;
+  height: 1200px;
+  background-color: rgb(203, 182, 144, 0.8);
+}
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="sticky">
+      <ul>
+        <li><a href="https://www.facebook.com/artyom.ribakov/"
+          ><img id="facebook"
+            src="https://play-lh.googleusercontent.com/ccWDU4A7fX1R24v-vvT480ySh26AYp97g1VrIB_FIdjRcuQB2JP2WdY7h_wVVAeSpg=w240-h480-rw"
+            alt=""
+            style="height: 5.5vh"
+        /></a></li>
+        <li><a href="https://github.com/MisterNooblet"
+          ><img id="git"
+            src="https://assets.ifttt.com/images/channels/2107379463/icons/monochrome_large.png"
+            alt=""
+            style="height: 5.5vh; margin-left: 10px; margin-right: 10px"
+        /></a></li>
+        <li><a href="https://www.instagram.com/viper_moto/"
+          ><img id="ig"
+            src="https://assets.ifttt.com/images/channels/28/icons/monochrome_large.png"
+            alt=""
+            style="height: 5.5vh"
+        /></a></li>
+      </ul>
+    </nav>
+    <div id="container">
+      <div id="header" class="box">
+        <h1>Hello there my name is Artyom Ribakov</h1>
+        <h3>I am currently a student at Appleseed's Fullstack Bootcamp</h3>
+      </div>
+      <div id="cards" class="box">
+        <div id="card1" class="card">
+          <img src="assets/images/pfp.jpg" class="personal-image" alt="PFP" />
+        </div>
+        <div class="card">
+          <h3>A tiny bit about me</h3>
+          <p>
+            31yo from Herzliya , recently resigned from military service at the
+            IAF. I enjoy Gaming, Sports , and riding my
+            <span style="color: green; background-color: black">Z800</span>
+          </p>
+          <p>
+            <a href="https://thehollow.xyz/100stepsui.html"
+              >Here is a small JS Game i made pre-course.</a
+            >
+          </p>
+          <a href="https://plutopigs.xyz">And an NFT Project i worked on</a>
+        </div>
+        <div id="card2" class="card">
+          <img
+            src="assets/images/meditation.jpg"
+            class="personal-image2"
+            alt="PFP"
+          />
+        </div>
+        <div class="card">
+          <h3>A tiny bit about my passions</h3>
+          <p>
+            Riding 2-wheels for 8 years <br />
+            Participated in ILSBK2018(Israeli Suberbike league)
+          </p>
+        </div>
+      </div>
+      <div id="main" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis excepturi vitae velit! Harum, ab sunt unde debitis omnis iste aliquam. Ut, nam facilis perspiciatis temporibus pariatur illum minima! Repudiandae illum, magnam, soluta sed expedita a quasi sit explicabo provident rem ipsam, ab modi tempore veritatis? Quaerat necessitatibus sequi a perferendis. Laudantium obcaecati incidunt cumque ipsa natus officia hic exercitationem laboriosam rerum ad labore minus culpa cum, earum placeat quasi nisi suscipit, iste nulla minima perferendis, autem quis inventore quas! Assumenda obcaecati earum voluptate repellendus maiores nesciunt iusto. Ad illo cum rerum mollitia asperiores. Harum iure accusantium dicta molestiae repudiandae? Repellat quasi excepturi est accusamus ut quod consequuntur accusantium esse fuga minima ratione reprehenderit commodi voluptate suscipit officiis, numquam reiciendis velit repellendus neque sunt odio rem, perspiciatis dicta quas. Fuga perspiciatis maxime aliquid soluta veritatis? Obcaecati nesciunt, minus deserunt laudantium iste debitis totam, modi mollitia molestias, corrupti deleniti molestiae tempora?</div>
+      <div class="clr"></div>
+      <div id="footer"> <a href="https://www.facebook.com/artyom.ribakov/"
+        ><img 
+          src="https://play-lh.googleusercontent.com/ccWDU4A7fX1R24v-vvT480ySh26AYp97g1VrIB_FIdjRcuQB2JP2WdY7h_wVVAeSpg=w240-h480-rw"
+          alt=""
+          style="height: 5.5vh"
+      /></a>
+      <a href="https://github.com/MisterNooblet"
+        ><img 
+          src="https://assets.ifttt.com/images/channels/2107379463/icons/monochrome_large.png"
+          alt=""
+          style="height: 5.5vh; margin-left: 10px; margin-right: 10px"
+      /></a>
+      <a href="https://www.instagram.com/viper_moto/"
+        ><img 
+          src="https://assets.ifttt.com/images/channels/28/icons/monochrome_large.png"
+          alt=""
+          style="height: 5.5vh"
+      /></a>
+    </div></div>
+    </div>
+  </body>
+</html>
