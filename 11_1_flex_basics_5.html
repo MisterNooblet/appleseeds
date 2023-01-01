@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11_1_flex_basics_5</title>
+
+    <style>
+      nav {
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100px;
+        width: 100vw;
+      }
+      #logo {
+        text-align: center;
+      }
+      #links {
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+      }
+      ul li {
+        padding: 2rem;
+      }
+
+      @media (min-width: 900px) {
+        nav {
+          background-color: aqua;
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          justify-content: space-between;
+          min-height: 100px;
+          width: 100vw;
+        }
+        #logo {
+        }
+        #links {
+        }
+        ul {
+          list-style: none;
+          display: flex;
+
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="logo">APPLESEEDS</div>
+      <div id="links">
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>PORTFOLIO</li>
+          <li>CONTACT</li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
