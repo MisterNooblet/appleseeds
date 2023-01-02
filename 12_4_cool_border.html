@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12_4_cool_border</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+      }
+      h1 {
+        color: lightgreen;
+      }
+
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+        width: 20rem;
+        left: 40vw;
+        top: 40vh;
+        position: relative;
+        /* background-color: orange; */
+      }
+      #leftside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+        width: 10rem;
+        left: 0vw;
+        position: absolute;
+      }
+
+      #leftside:before {
+        content: "";
+        position: absolute;
+        border-top: 2px solid lightgreen;
+        border-left: 2px solid lightgreen;
+        border-top-left-radius: 15px;
+        top: 0;
+        left: 0;
+        width: 5rem;
+        height: 5rem;
+        z-index: 2;
+      }
+      #leftside:after {
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid lightgreen;
+        border-left: 2px solid lightgreen;
+        border-bottom-left-radius: 15px;
+        bottom: 0;
+        left: 0;
+        width: 5rem;
+        height: 5rem;
+        z-index: 2;
+      }
+
+      #rightside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+        width: 10rem;
+        right: 0vw;
+        position: absolute;
+        /* background-color: orange; */
+      }
+
+      #rightside:before {
+        content: "";
+        position: absolute;
+        border-top: 2px solid lightgreen;
+        border-right: 2px solid lightgreen;
+        border-top-right-radius: 15px;
+        top: 0;
+        right: 0;
+        width: 5rem;
+        height: 5rem;
+        z-index: 2;
+      }
+      #rightside:after {
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid lightgreen;
+        border-right: 2px solid lightgreen;
+        border-bottom-right-radius: 15px;
+        bottom: 0;
+        right: 0;
+        width: 5rem;
+        height: 5rem;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftside"></div>
+      <div id="rightside"></div>
+      <h1>+</h1>
+    </div>
+  </body>
+</html>
