@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12_2_pseudo_box_color</title>
+    <style>
+      #container {
+        height: 20rem;
+        width: 20rem;
+        position: relative;
+      }
+      #box {
+        background-color: purple;
+        height: 20rem;
+        width: 20rem;
+      }
+      #box:after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: darkorange;
+        top: 0;
+        right: 0;
+      }
+      #box:hover::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: green;
+        top: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="box"></div>
+    </div>
+  </body>
+</html>
