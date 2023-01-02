@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12_5_tooltip</title>
+    <style>
+      a {
+        color: orange;
+        text-decoration: none;
+        position: relative;
+      }
+      a:after {
+        content: attr(data-tooltip);
+        color: black;
+        text-align: center;
+        width: 15vw;
+        background-color: yellow;
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        border: 1px solid black;
+        border-radius: 5px;
+        display: none;
+      }
+      a:hover:after {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto
+      deserunt hic delectus nostrum rem odit cum consequatur nam laborum, unde
+      accusantium amet aliquid
+      <a href="#" data-tooltip="my value">corrupti!</a> Voluptate quos
+      voluptatum id. Provident neque quaerat magnam ad libero praesentium magni
+      ducimus consectetur rem nam quia quasi alias officiis accusamus
+      perspiciatis, architecto, quam nobis. Optio repellendus illum velit magni
+      praesentium placeat numquam odit voluptatem saepe temporibus maxime
+      accusantium molestias, aliquid quasi, sint mollitia, odio assumenda
+      laboriosam cupiditate nihil ad? Iusto expedita neque mollitia, natus
+      dignissimos at unde debitis sit vitae! Eaque harum nostrum corporis
+      aspernatur natus ipsum suscipit non quidem labore similique nemo
+      perspiciatis, eos accusantium assumenda culpa rem facilis deleniti ipsam
+      praesentium voluptas illum excepturi nisi est? Temporibus, libero sunt
+      veritatis accusantium nihil recusandae exercitationem dolor? Natus,
+      corporis. Doloribus dignissimos corrupti beatae veritatis magnam illo
+      mollitia, natus possimus. Dolore facere voluptatum deleniti sed facilis
+      sapiente iure odio quidem, nesciunt neque dolor deserunt eveniet?
+    </p>
+  </body>
+</html>
