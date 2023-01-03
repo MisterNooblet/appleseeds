@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AR Landing page</title>
     <style>
+      :root {
+        --resizeable: calc(8px + (18 - 8) * ((100vw - 300px) / (1600 - 300)));
+        --ncc: no-repeat center center/cover;
+      }
+
       * {
         margin: 0;
         padding: 0;
@@ -24,7 +29,7 @@
         width: 35vw;
         height: 60vh;
         padding: 10vh 0;
-        font-size: calc(8px + (18 - 8) * ((100vw - 300px) / (1600 - 300)));
+        font-size: var(--resizeable);
         float: left;
       }
       #leftinfobox h1 {
@@ -42,7 +47,7 @@
       }
 
       #rightimagebox {
-        background: url("/assets/images/pfp.jpg") no-repeat center center/cover;
+        background: url("/assets/images/pfp.jpg") var(--ncc);
         width: 35vw;
         height: 60vh;
         float: right;
@@ -59,8 +64,7 @@
         }
 
         #rightimagebox {
-          background: url("/assets/images/pfp.jpg") no-repeat center
-            center/cover;
+          background: url("/assets/images/pfp.jpg") var(--ncc);
           width: 70vw;
           height: 60vh;
           float: right;
