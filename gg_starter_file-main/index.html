@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Gallery</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      .grid {
+        row-gap: 15px;
+        column-gap: 15px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+          "img1 img1 img2 img2 img2 img3 img4 img4 "
+          "img1 img1 img2 img2 img2 img3 img4 img4 "
+          "img5 img5 img2 img2 img2 img8 img8 img9"
+          "img5 img5 img6 img6 img7 img8 img8 img9"
+          "img5 img5 img6 img6 img13 img13 img13 img9"
+          "img10 img11 img11 img12 img13 img13 img13 img14"
+          "img10 img11 img11 img12 img13 img13 img13 img14";
+      }
+
+      .item1 {
+        background: url("/img/1.jpeg") center center/cover no-repeat;
+        grid-area: img1;
+      }
+      .item2 {
+        background: url("/img/2.jpeg") center center/cover no-repeat;
+        grid-area: img2;
+      }
+      .item3 {
+        background: url("/img/3.jpeg") center center/cover no-repeat;
+        grid-area: img3;
+      }
+      .item4 {
+        background: url("/img/4.jpeg") center center/cover no-repeat;
+        grid-area: img4;
+      }
+      .item5 {
+        background: url("/img/5.jpeg") center center/cover no-repeat;
+        grid-area: img5;
+      }
+      .item6 {
+        background: url("/img/6.jpeg") center center/cover no-repeat;
+        grid-area: img6;
+      }
+      .item7 {
+        background: url("/img/7.jpeg") center center/cover no-repeat;
+        grid-area: img7;
+      }
+      .item8 {
+        background: url("/img/8.jpeg") center center/cover no-repeat;
+        grid-area: img8;
+      }
+      .item9 {
+        background: url("/img/9.jpeg") center center/cover no-repeat;
+        grid-area: img9;
+      }
+      .item10 {
+        background: url("/img/10.jpeg") center center/cover no-repeat;
+        grid-area: img10;
+      }
+      .item11 {
+        background: url("/img/11.jpeg") center center/cover no-repeat;
+        grid-area: img11;
+      }
+      .item12 {
+        background: url("/img/12.jpeg") center center/cover no-repeat;
+        grid-area: img12;
+      }
+      .item13 {
+        background: url("/img/13.jpeg") center center/cover no-repeat;
+        grid-area: img13;
+      }
+      .item14 {
+        background: url("/img/14.jpeg") center center/cover no-repeat;
+        grid-area: img14;
+      }
+
+      @media (max-width: 700px) {
+        .grid {
+          grid-template-areas:
+            "img1 img1 img1 img2 img2 img3 img3 img3 "
+            "img1 img1 img1 img2 img2 img3 img3 img3 "
+            "img7 img8 img9 img10 img11 img12 img13 img14"
+            "img4 img4 img5 img5 img5 img5 img6 img6"
+            "img4 img4 img5 img5 img5 img5 img6 img6"
+            /* "img10 img11 img11 img12 img13 img13 img13 img14"
+          "img10 img11 img11 img12 img13 img13 img13 img14"; */;
+        }
+      }
+
+      @media (max-width: 1180px) {
+        .grid {
+          grid-template-areas:
+            "img1 img11 img12 img13 img14  img6 "
+            "img2 img11 img12 img13 img14  img7 "
+            "img3 img11 img12 img13 img14  img8"
+            "img4 img11 img12 img13 img14  img9"
+            "img5 img11 img12 img13 img14  img10"
+            /* "img10 img11 img11 img12 img13 img13 img13 img14"
+          "img10 img11 img11 img12 img13 img13 img13 img14"; */;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4"></div>
+      <div class="item5"></div>
+      <div class="item6"></div>
+      <div class="item7"></div>
+      <div class="item8"></div>
+      <div class="item9"></div>
+      <div class="item10"></div>
+      <div class="item11"></div>
+      <div class="item12"></div>
+      <div class="item13"></div>
+      <div class="item14"></div>
+    </div>
+  </body>
+</html>
